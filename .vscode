@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome", 
+      "request": "launch", // 表示启动一个新的调试会话
+      "name": "调试记账本前端项目", // 表示调试会话的名称
+      "runtimeExecutable": "canary", // 这里启动的是canary，也可以选择chrome
+      "runtimeArgs": ["--auto-open-devtools-for-tabs"], // 启动浏览器后也打开开发者工具
+      "userDataDir": false, 
+      "url": "http://localhost:5173", // 启动的地址，也是你项目的地址
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
